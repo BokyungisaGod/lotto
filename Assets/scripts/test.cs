@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,48 +12,51 @@ public class test : MonoBehaviour
     private int n;
     public Button[] buttons;
     public Color[] colors;
+    private bool buttonClicked = false;
 
     private void Start()
     {
-        // ÃÖÃÊ ½ÇÇà ½Ã¿¡´Â ·£´ı ¼ıÀÚ¸¦ ¼³Á¤ÇÏÁö ¾ÊÀ½
+        //            Ã¿            Ú¸               
     }
 
-    // ³ª¸ÓÁö ¹öÆ°À» ´­·¶À» ¶§ È£ÃâµÇ´Â ÇÔ¼ö
+    //          Æ°             È£  Ç´   Ô¼ 
     //public void OnOtherButtonClicked()
     //{
     //    int[] numbers = randomnumber.RandomNumbers(maxCount, n);
 
-    //    // ¹öÆ° ¹è¿­ÀÇ Å©±â¸¸Å­¸¸ ¼øÈ¸ÇÏ¸ç ·£´ı ¼ıÀÚ ¼³Á¤
+    //    //   Æ°  è¿­   Å© â¸¸Å­     È¸ Ï¸                
     //    for (int i = 0; i < buttons.Length; i++)
     //    {
-    //        Debug.Log($"{i + 1}¹øÂ° ³­¼ö : {numbers[i]}");
-    //        // ¹öÆ° ÅØ½ºÆ®¿¡ ·£´ı ¼ıÀÚ ¼³Á¤
+    //        Debug.Log($"{i + 1}  Â°      : {numbers[i]}");
+    //        //   Æ°  Ø½ Æ®                 
     //        buttons[i].GetComponentInChildren<Text>().text = numbers[i].ToString();
     //        SetButtonColor(buttons[i], numbers[i]);
     //    }
     //}
-    // ¹öÆ°À» Å¬¸¯ÇÒ ¶§ È£ÃâµÇ´Â ÇÔ¼ö
+    //   Æ°   Å¬        È£  Ç´   Ô¼ 
     public void OnButtonClicked()
     {
-        // Button1, Button2, Button3, Button4, Button5¿¡ ·£´ı ¼ıÀÚ ¼³Á¤
-        SetRandomNumbersToButtons();
-        // nÃÊ µÚ¿¡ lotto ¾ÀÀ¸·Î ÀüÈ¯
-        Invoke("LoadLottoScene", n);
+        if (!buttonClicked) // ë²„íŠ¼ì´ í´ë¦­ë˜ì§€ ì•Šì•˜ì„ ë•Œë§Œ ì‹¤í–‰
+        {
+            buttonClicked = true; // ë²„íŠ¼ í´ë¦­ ìƒíƒœë¡œ ì„¤ì •
+            SetRandomNumbersToButtons();
+            Invoke("LoadLottoScene", n);
+        }
     }
 
-    // Button1, Button2, Button3, Button4, Button5¿¡ ·£´ı ¼ıÀÚ ¼³Á¤ÇÏ´Â ÇÔ¼ö
+    // Button1, Button2, Button3, Button4, Button5                  Ï´   Ô¼ 
     private void SetRandomNumbersToButtons()
     {
         int[] numbers = randomnumber.RandomNumbers(maxCount, buttons.Length);
 
         for (int i = 0; i < buttons.Length; i++)
         {
-            Debug.Log($"Button{i + 1}ÀÇ ³­¼ö : {numbers[i]}");
+            buttons[i].interactable = false;
+            Debug.Log($"Button{i + 1}        : {numbers[i]}");
             buttons[i].GetComponentInChildren<Text>().text = numbers[i].ToString();
             SetButtonColor(buttons[i], numbers[i]);
         }
     }
-
 
     public void SetButtonColor(Button button, int number)
     {
@@ -80,7 +83,7 @@ public class test : MonoBehaviour
     }
     private void LoadLottoScene()
     {
-        Debug.Log("Lotto ¾ÀÀ¸·Î ÀüÈ¯ÇÕ´Ï´Ù.");
+        Debug.Log("Lotto          È¯ Õ´Ï´ .");
 
         SceneManager.LoadScene("lotto");
     }
