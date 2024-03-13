@@ -88,3 +88,4 @@ public class test : MonoBehaviour
         SceneManager.LoadScene("lotto");
     }
 }
+//해윙
