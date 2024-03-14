@@ -13,6 +13,7 @@ public class test : MonoBehaviour
     public Button[] buttons;
     public Color[] colors;
     private bool buttonClicked = false;
+    public Button btn;
 
     private void Start()
     {
@@ -36,6 +37,7 @@ public class test : MonoBehaviour
     //   ư   Ŭ        ȣ  Ǵ   Լ 
     public void OnButtonClicked()
     {
+        btn.interactable= false;
         if (!buttonClicked) // 버튼이 클릭되지 않았을 때만 실행
         {
             buttonClicked = true; // 버튼 클릭 상태로 설정
@@ -51,7 +53,7 @@ public class test : MonoBehaviour
 
         for (int i = 0; i < buttons.Length; i++)
         {
-            buttons[i].interactable = false;
+            //buttons[i].interactable = false;
             Debug.Log($"Button{i + 1}        : {numbers[i]}");
             buttons[i].GetComponentInChildren<Text>().text = numbers[i].ToString();
             SetButtonColor(buttons[i], numbers[i]);

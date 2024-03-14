@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4
+  m_Text: 44
 --- !u!222 &169847
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -211,7 +211,6 @@ GameObject:
   - component: {fileID: 29147581}
   - component: {fileID: 29147580}
   - component: {fileID: 29147579}
-  - component: {fileID: 29147578}
   m_Layer: 5
   m_Name: Button (Legacy) (4)
   m_TagString: Untagged
@@ -240,31 +239,6 @@ RectTransform:
   m_AnchoredPosition: {x: 30, y: 95}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &29147578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29147576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c37e26e7059cda4c8d8542db5074f30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 945155577}
-  - {fileID: 450848917}
-  - {fileID: 667308057}
-  - {fileID: 1879499425}
-  - {fileID: 29147579}
-  - {fileID: 952071915}
-  - {fileID: 1514096986}
-  - {fileID: 667819812}
-  - {fileID: 1006247436}
-  - {fileID: 1406044095}
-  check: {fileID: 1850898976}
-  checkBool: 0
 --- !u!114 &29147579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,7 +283,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 29147578}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ButtonGroup, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 2
@@ -429,7 +403,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 7
+  m_Text: 17
 --- !u!222 &74047017
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -508,7 +482,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 7
+  m_Text: 37
 --- !u!222 &75160363
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -624,8 +598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &78690183
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -725,7 +698,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 9
+  m_Text: 39
 --- !u!222 &79013471
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -909,8 +882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 1599521784}
-  checkBool: 0
+  num: 0
 --- !u!222 &99282625
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1047,8 +1019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &102893860
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1148,7 +1119,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 7
+  m_Text: 47
 --- !u!222 &116565645
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1232,6 +1203,101 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157636212}
   m_CullTransparentMesh: 1
+--- !u!1 &171867362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 171867364}
+  - component: {fileID: 171867363}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &171867363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171867362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c37e26e7059cda4c8d8542db5074f30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 945155577}
+  - {fileID: 450848917}
+  - {fileID: 667308057}
+  - {fileID: 1879499425}
+  - {fileID: 29147579}
+  - {fileID: 952071915}
+  - {fileID: 1514096986}
+  - {fileID: 667819812}
+  - {fileID: 1006247436}
+  - {fileID: 1406044095}
+  - {fileID: 764061749}
+  - {fileID: 1036694138}
+  - {fileID: 1559426412}
+  - {fileID: 248465375}
+  - {fileID: 102893857}
+  - {fileID: 1308884971}
+  - {fileID: 1111369629}
+  - {fileID: 1792379038}
+  - {fileID: 509744254}
+  - {fileID: 1542320391}
+  - {fileID: 891834762}
+  - {fileID: 444232688}
+  - {fileID: 1143902114}
+  - {fileID: 78690180}
+  - {fileID: 364895948}
+  - {fileID: 466310775}
+  - {fileID: 2012571611}
+  - {fileID: 652588589}
+  - {fileID: 1428517086}
+  - {fileID: 677619772}
+  - {fileID: 1953921986}
+  - {fileID: 663900704}
+  - {fileID: 470297023}
+  - {fileID: 486224032}
+  - {fileID: 284478273}
+  - {fileID: 1540463235}
+  - {fileID: 448687057}
+  - {fileID: 470829399}
+  - {fileID: 558757356}
+  - {fileID: 1745463957}
+  - {fileID: 99282622}
+  - {fileID: 2097098531}
+  - {fileID: 505419423}
+  - {fileID: 685292255}
+  - {fileID: 888779427}
+  - {fileID: 1900183552}
+  - {fileID: 183994173}
+  - {fileID: 564634433}
+  - {fileID: 1116798411}
+  num: 3
+--- !u!4 &171867364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171867362}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 730, y: 200, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &183994172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,8 +1405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 245351429}
-  checkBool: 0
+  num: 0
 --- !u!222 &183994176
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1781,8 +1846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &248465378
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2077,8 +2141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &284478276
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2215,8 +2278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &364895951
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2395,7 +2457,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4
+  m_Text: 14
 --- !u!222 &405939249
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2590,8 +2652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &444232691
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2728,8 +2789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &448687060
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2771,7 +2831,6 @@ GameObject:
   - component: {fileID: 450848919}
   - component: {fileID: 450848918}
   - component: {fileID: 450848917}
-  - component: {fileID: 450848916}
   m_Layer: 5
   m_Name: Button (Legacy) (1)
   m_TagString: Untagged
@@ -2800,31 +2859,6 @@ RectTransform:
   m_AnchoredPosition: {x: -30, y: 95}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &450848916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 450848914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c37e26e7059cda4c8d8542db5074f30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 945155577}
-  - {fileID: 450848917}
-  - {fileID: 667308057}
-  - {fileID: 1879499425}
-  - {fileID: 29147579}
-  - {fileID: 952071915}
-  - {fileID: 1514096986}
-  - {fileID: 667819812}
-  - {fileID: 1006247436}
-  - {fileID: 1406044095}
-  check: {fileID: 1966542131}
-  checkBool: 0
 --- !u!114 &450848917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2869,7 +2903,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 450848916}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ButtonGroup, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 2
@@ -3026,8 +3060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &466310778
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3239,8 +3272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &470297026
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3377,8 +3409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &470829402
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3594,8 +3625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &486224035
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3732,8 +3762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 1203110908}
-  checkBool: 0
+  num: 0
 --- !u!222 &505419426
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3870,8 +3899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &509744257
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4158,8 +4186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &558757359
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4450,8 +4477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 530891862}
-  checkBool: 0
+  num: 0
 --- !u!222 &564634436
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4738,8 +4764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &652588592
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5001,8 +5026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &663900707
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5044,7 +5068,6 @@ GameObject:
   - component: {fileID: 667308059}
   - component: {fileID: 667308058}
   - component: {fileID: 667308057}
-  - component: {fileID: 667308056}
   m_Layer: 5
   m_Name: Button (Legacy) (2)
   m_TagString: Untagged
@@ -5073,31 +5096,6 @@ RectTransform:
   m_AnchoredPosition: {x: -10, y: 95}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &667308056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 667308054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c37e26e7059cda4c8d8542db5074f30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 945155577}
-  - {fileID: 450848917}
-  - {fileID: 667308057}
-  - {fileID: 1879499425}
-  - {fileID: 29147579}
-  - {fileID: 952071915}
-  - {fileID: 1514096986}
-  - {fileID: 667819812}
-  - {fileID: 1006247436}
-  - {fileID: 1406044095}
-  check: {fileID: 1780528363}
-  checkBool: 0
 --- !u!114 &667308057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5142,7 +5140,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 667308056}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ButtonGroup, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 2
@@ -5204,7 +5202,6 @@ GameObject:
   - component: {fileID: 667819814}
   - component: {fileID: 667819813}
   - component: {fileID: 667819812}
-  - component: {fileID: 667819811}
   m_Layer: 5
   m_Name: Button (Legacy) (7)
   m_TagString: Untagged
@@ -5233,31 +5230,6 @@ RectTransform:
   m_AnchoredPosition: {x: 90, y: 95}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &667819811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 667819809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c37e26e7059cda4c8d8542db5074f30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 945155577}
-  - {fileID: 450848917}
-  - {fileID: 667308057}
-  - {fileID: 1879499425}
-  - {fileID: 29147579}
-  - {fileID: 952071915}
-  - {fileID: 1514096986}
-  - {fileID: 667819812}
-  - {fileID: 1006247436}
-  - {fileID: 1406044095}
-  check: {fileID: 1317410941}
-  checkBool: 0
 --- !u!114 &667819812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5302,7 +5274,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 667819811}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ButtonGroup, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 2
@@ -5422,7 +5394,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 41
 --- !u!222 &671649001
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5538,8 +5510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &677619775
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5639,7 +5610,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 3
+  m_Text: 13
 --- !u!222 &678934687
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5830,8 +5801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 1293374063}
-  checkBool: 0
+  num: 0
 --- !u!222 &685292258
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6006,7 +5976,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2
+  m_Text: 22
 --- !u!222 &706323593
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6085,7 +6055,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 9
+  m_Text: 19
 --- !u!222 &708031353
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6164,7 +6134,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4
+  m_Text: 34
 --- !u!222 &711153294
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6243,7 +6213,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10
+  m_Text: 20
 --- !u!222 &742279150
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6359,8 +6329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &764061752
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6405,7 +6374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &810385565
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6580,7 +6549,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 9
+  m_Text: 49
 --- !u!222 &836981510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6751,7 +6720,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 6
+  m_Text: 36
 --- !u!222 &844667590
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6867,8 +6836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 187616361}
-  checkBool: 0
+  num: 0
 --- !u!222 &888779430
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7080,8 +7048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &891834765
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7201,7 +7168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &896406718
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7468,7 +7435,6 @@ GameObject:
   - component: {fileID: 945155579}
   - component: {fileID: 945155578}
   - component: {fileID: 945155577}
-  - component: {fileID: 945155576}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -7497,31 +7463,6 @@ RectTransform:
   m_AnchoredPosition: {x: -50, y: 95}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &945155576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945155574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c37e26e7059cda4c8d8542db5074f30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 945155577}
-  - {fileID: 450848917}
-  - {fileID: 667308057}
-  - {fileID: 1879499425}
-  - {fileID: 29147579}
-  - {fileID: 952071915}
-  - {fileID: 1514096986}
-  - {fileID: 667819812}
-  - {fileID: 1006247436}
-  - {fileID: 1406044095}
-  check: {fileID: 1975924968}
-  checkBool: 0
 --- !u!114 &945155577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7566,7 +7507,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 945155576}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ButtonGroup, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 2
@@ -7628,7 +7569,6 @@ GameObject:
   - component: {fileID: 952071917}
   - component: {fileID: 952071916}
   - component: {fileID: 952071915}
-  - component: {fileID: 952071914}
   m_Layer: 5
   m_Name: Button (Legacy) (5)
   m_TagString: Untagged
@@ -7657,31 +7597,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: 95}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &952071914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952071912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c37e26e7059cda4c8d8542db5074f30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 945155577}
-  - {fileID: 450848917}
-  - {fileID: 667308057}
-  - {fileID: 1879499425}
-  - {fileID: 29147579}
-  - {fileID: 952071915}
-  - {fileID: 1514096986}
-  - {fileID: 667819812}
-  - {fileID: 1006247436}
-  - {fileID: 1406044095}
-  check: {fileID: 1006276469}
-  checkBool: 0
 --- !u!114 &952071915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7726,7 +7641,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 952071914}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ButtonGroup, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 2
@@ -7921,7 +7836,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 3
+  m_Text: 43
 --- !u!222 &973528404
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8017,7 +7932,6 @@ GameObject:
   - component: {fileID: 1006247438}
   - component: {fileID: 1006247437}
   - component: {fileID: 1006247436}
-  - component: {fileID: 1006247435}
   m_Layer: 5
   m_Name: Button (Legacy) (8)
   m_TagString: Untagged
@@ -8046,31 +7960,6 @@ RectTransform:
   m_AnchoredPosition: {x: 110, y: 95}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &1006247435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006247433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c37e26e7059cda4c8d8542db5074f30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 945155577}
-  - {fileID: 450848917}
-  - {fileID: 667308057}
-  - {fileID: 1879499425}
-  - {fileID: 29147579}
-  - {fileID: 952071915}
-  - {fileID: 1514096986}
-  - {fileID: 667819812}
-  - {fileID: 1006247436}
-  - {fileID: 1406044095}
-  check: {fileID: 681060147}
-  checkBool: 0
 --- !u!114 &1006247436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8115,7 +8004,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1006247435}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ButtonGroup, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 2
@@ -8347,8 +8236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &1036694141
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8523,7 +8411,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 31
 --- !u!222 &1094831613
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8639,8 +8527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &1111369632
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8724,8 +8611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 1089959738}
-  checkBool: 0
+  num: 0
 --- !u!114 &1116798411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8994,8 +8880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &1143902117
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9198,7 +9083,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 3
+  m_Text: 23
 --- !u!222 &1159930891
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9277,7 +9162,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 11
 --- !u!222 &1161535113
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9356,7 +9241,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5
+  m_Text: 35
 --- !u!222 &1193694809
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9510,7 +9395,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 6
+  m_Text: 26
 --- !u!222 &1205610853
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9780,8 +9665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &1308884974
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9901,7 +9785,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1357390999
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9927,7 +9811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -60}
+  m_AnchoredPosition: {x: 0, y: -80}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1368081813
@@ -10000,7 +9884,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 6
+  m_Text: 46
 --- !u!222 &1368081816
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10079,7 +9963,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 8
+  m_Text: 38
 --- !u!222 &1388053909
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10233,7 +10117,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2
+  m_Text: 42
 --- !u!222 &1394312524
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10254,7 +10138,6 @@ GameObject:
   - component: {fileID: 1406044097}
   - component: {fileID: 1406044096}
   - component: {fileID: 1406044095}
-  - component: {fileID: 1406044094}
   m_Layer: 5
   m_Name: Button (Legacy) (9)
   m_TagString: Untagged
@@ -10283,31 +10166,6 @@ RectTransform:
   m_AnchoredPosition: {x: 130, y: 95}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &1406044094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1406044092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c37e26e7059cda4c8d8542db5074f30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 945155577}
-  - {fileID: 450848917}
-  - {fileID: 667308057}
-  - {fileID: 1879499425}
-  - {fileID: 29147579}
-  - {fileID: 952071915}
-  - {fileID: 1514096986}
-  - {fileID: 667819812}
-  - {fileID: 1006247436}
-  - {fileID: 1406044095}
-  check: {fileID: 1688137188}
-  checkBool: 0
 --- !u!114 &1406044095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10352,7 +10210,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1406044094}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ButtonGroup, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 2
@@ -10472,7 +10330,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5
+  m_Text: 25
 --- !u!222 &1418089199
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10588,8 +10446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &1428517089
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10689,7 +10546,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5
+  m_Text: 15
 --- !u!222 &1460619940
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10768,7 +10625,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 8
+  m_Text: 28
 --- !u!222 &1480104376
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10837,7 +10694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1500369227
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10937,7 +10794,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 3
+  m_Text: 33
 --- !u!222 &1504877931
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10958,7 +10815,6 @@ GameObject:
   - component: {fileID: 1514096988}
   - component: {fileID: 1514096987}
   - component: {fileID: 1514096986}
-  - component: {fileID: 1514096985}
   m_Layer: 5
   m_Name: Button (Legacy) (6)
   m_TagString: Untagged
@@ -10987,31 +10843,6 @@ RectTransform:
   m_AnchoredPosition: {x: 70, y: 95}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &1514096985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514096983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c37e26e7059cda4c8d8542db5074f30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 945155577}
-  - {fileID: 450848917}
-  - {fileID: 667308057}
-  - {fileID: 1879499425}
-  - {fileID: 29147579}
-  - {fileID: 952071915}
-  - {fileID: 1514096986}
-  - {fileID: 667819812}
-  - {fileID: 1006247436}
-  - {fileID: 1406044095}
-  check: {fileID: 612694090}
-  checkBool: 0
 --- !u!114 &1514096986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11056,7 +10887,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1514096985}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ButtonGroup, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 2
@@ -11213,8 +11044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &1540463238
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11351,8 +11181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &1542320394
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11489,8 +11318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &1559426415
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11815,7 +11643,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 9
+  m_Text: 29
 --- !u!222 &1613899829
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12123,7 +11951,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 8
+  m_Text: 18
 --- !u!222 &1679472713
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12277,7 +12105,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 8
+  m_Text: 48
 --- !u!222 &1737956251
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12393,8 +12221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &1745463960
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12756,8 +12583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &1792379041
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13232,7 +13058,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10
+  m_Text: 30
 --- !u!222 &1871476360
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13311,7 +13137,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4
+  m_Text: 24
 --- !u!222 &1871865947
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13332,7 +13158,6 @@ GameObject:
   - component: {fileID: 1879499427}
   - component: {fileID: 1879499426}
   - component: {fileID: 1879499425}
-  - component: {fileID: 1879499424}
   m_Layer: 5
   m_Name: Button (Legacy) (3)
   m_TagString: Untagged
@@ -13361,31 +13186,6 @@ RectTransform:
   m_AnchoredPosition: {x: 10, y: 95}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &1879499424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1879499422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c37e26e7059cda4c8d8542db5074f30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 945155577}
-  - {fileID: 450848917}
-  - {fileID: 667308057}
-  - {fileID: 1879499425}
-  - {fileID: 29147579}
-  - {fileID: 952071915}
-  - {fileID: 1514096986}
-  - {fileID: 667819812}
-  - {fileID: 1006247436}
-  - {fileID: 1406044095}
-  check: {fileID: 234363515}
-  checkBool: 0
 --- !u!114 &1879499425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13430,7 +13230,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1879499424}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ButtonGroup, Assembly-CSharp
         m_MethodName: Click
         m_Mode: 2
@@ -13587,8 +13387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 1748282758}
-  checkBool: 0
+  num: 0
 --- !u!222 &1900183555
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13950,8 +13749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &1953921989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14426,7 +14224,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2
+  m_Text: 12
 --- !u!222 &1985499401
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14505,7 +14303,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10
+  m_Text: 40
 --- !u!222 &1988347376
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14621,8 +14419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 0}
-  checkBool: 0
+  num: 0
 --- !u!222 &2012571614
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14722,7 +14519,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2
+  m_Text: 32
 --- !u!222 &2055920269
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14876,7 +14673,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5
+  m_Text: 45
 --- !u!222 &2078376191
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14955,7 +14752,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 21
 --- !u!222 &2080684491
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15034,7 +14831,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 7
+  m_Text: 27
 --- !u!222 &2083187681
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15150,8 +14947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons: []
-  check: {fileID: 610804079}
-  checkBool: 0
+  num: 0
 --- !u!222 &2097098534
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15251,7 +15047,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 6
+  m_Text: 16
 --- !u!222 &2108826484
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15267,3 +15063,4 @@ SceneRoots:
   - {fileID: 840611092}
   - {fileID: 656793520}
   - {fileID: 84766836}
+  - {fileID: 171867364}
