@@ -14,6 +14,7 @@ public class test : MonoBehaviour
     public Color[] colors;
     private bool buttonClicked = false;
     public Button btn;
+    public static int[] numbers;
 
     private void Start()
     {
@@ -49,7 +50,7 @@ public class test : MonoBehaviour
     // Button1, Button2, Button3, Button4, Button5                  ϴ   Լ 
     private void SetRandomNumbersToButtons()
     {
-        int[] numbers = randomnumber.RandomNumbers(maxCount, buttons.Length);
+        numbers = randomnumber.RandomNumbers(maxCount, buttons.Length);
 
         for (int i = 0; i < buttons.Length; i++)
         {

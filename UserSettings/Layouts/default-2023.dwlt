@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1440
     height: 810
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 50
+  controlID: 39
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 51
+  controlID: 40
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 52
+  controlID: 41
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,8 +243,8 @@ MonoBehaviour:
     y: 0
     width: 558
     height: 515
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -269,14 +269,14 @@ MonoBehaviour:
     y: 515
     width: 1099.5
     height: 245
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 13}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 13}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -350,7 +350,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/scripts
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -360,15 +360,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\wnghk\Desktop\lotto
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 66690000
-    m_LastClickedID: 26982
+    m_SelectedIDs: 64690000
+    m_LastClickedID: 26980
     m_ExpandedIDs: 000000004669000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -422,8 +422,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 6e690000
+    m_LastClickedInstanceID: 26990
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000ee8300008ead0000c4840000c284000000000000
     m_RenameOverlay:
@@ -492,9 +492,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e6630000
-      m_LastClickedID: 25574
-      m_ExpandedIDs: 06fbffffa2630000be630000ca630000ec6300001864000034640000406400006464000070640000866400009a640000a6640000ba640000c6640000d2640000ee6400000a65000026650000326500003e6500006665000082650000e6650000fa650000686600008466000090660000a4660000b0660000f26600003c670000726700007e6700008a670000e66700000a680000586800007c680000c0680000f4680000
+      m_SelectedIDs: 6e690000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 5aabffffaaabffff92adffffdcadffff20aeffffa2b1ffff38b6ffff86b8ffffd0b8ffff9abdffffe6beffff34c0ffffbcc1ffff0ac2ffff7cc4ffff66c5ffffb4c5ffff4ac8ffff62c9ffff4ccaffffe2e6ffff84f3ffffd2f3ffff62f9ffff06fbffff32650000b06600000667000098880000208a0000d08a00005c8e0000e48f0000c69e0000aaa6000032a80000e2a80000a6ad00002eaf000020c00000a8c100000ac2000008ea00001af900008ef9000078fb000070060100e4060100ce080100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -821,7 +821,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
-      index: 19
+      index: 14
       layout: 4
       size: {x: 240, y: 135}
       sizeOverridden: 1
@@ -1059,9 +1059,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 550, y: 120, z: 0}
+    m_Target: {x: 640, y: 65, z: 0}
     speed: 2
-    m_Value: {x: 550, y: 120, z: 0}
+    m_Value: {x: 640, y: 65, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1111,9 +1111,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 14.142136
+    m_Target: 183.09833
     speed: 2
-    m_Value: 14.142136
+    m_Value: 183.09833
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1276,7 +1276,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 1
+    m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
@@ -1290,18 +1290,18 @@ MonoBehaviour:
       y: 21
       width: 556
       height: 473
-    m_Scale: {x: 1.13707, y: 1.13707}
-    m_Translation: {x: 274.1347, y: 236.5}
+    m_Scale: {x: 0.86875, y: 0.86875}
+    m_Translation: {x: 278, y: 236.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -241.0887
-      y: -207.99072
-      width: 488.97607
-      height: 415.98145
+      x: -320
+      y: -272.23022
+      width: 640
+      height: 544.46045
     m_MinimalGUI: 1
   m_defaultScale: 0.86875
   m_LastWindowPixelSize: {x: 1112, y: 988}
@@ -1389,7 +1389,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 49
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
