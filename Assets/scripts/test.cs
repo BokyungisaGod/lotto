@@ -9,16 +9,16 @@ public class test : MonoBehaviour
     [SerializeField]
     private int maxCount;
     [SerializeField]
-    private int n;
+    //private int n;
     public Button[] buttons;
     public Color[] colors;
     private bool buttonClicked = false;
     public Button btn;
     public static int[] numbers;
+    public Count countnumber;
 
     private void Start()
-    {
-        //            ÿ            ڸ               
+    {            
     }
 
     //          ư             ȣ  Ǵ   Լ 
@@ -35,18 +35,19 @@ public class test : MonoBehaviour
     //        SetButtonColor(buttons[i], numbers[i]);
     //    }
     //}
-    //   ư   Ŭ        ȣ  Ǵ   Լ 
     public void OnButtonClicked()
     {
         btn.interactable= false;
-        if (!buttonClicked) // 버튼이 클릭되지 않았을 때만 실행
-        {
-            buttonClicked = true; // 버튼 클릭 상태로 설정
-            SetRandomNumbersToButtons();
-            Invoke("LoadLottoScene", n);
-        }
+        //if (!buttonClicked) // 버튼이 클릭되지 않았을 때만 실행
+        //{
+        //    buttonClicked = true; // 버튼 클릭 상태로 설정
+        //}
+        SetRandomNumbersToButtons();
+        countnumber.CountNumber();
+        //LoadLottoScene();
+        //Invoke("LoadLottoScene", n);
     }
-
+    
     // Button1, Button2, Button3, Button4, Button5                  ϴ   Լ 
     private void SetRandomNumbersToButtons()
     {
@@ -60,7 +61,7 @@ public class test : MonoBehaviour
             SetButtonColor(buttons[i], numbers[i]);
         }
     }
-
+    
     public void SetButtonColor(Button button, int number)
     {
         if (number >= 1 && number <= 9)
@@ -86,9 +87,6 @@ public class test : MonoBehaviour
     }
     private void LoadLottoScene()
     {
-        Debug.Log("Lotto          ȯ մϴ .");
-
-        SceneManager.LoadScene("lotto");
+        //SceneManager.LoadScene("lotto");
     }
 }
-//해윙
