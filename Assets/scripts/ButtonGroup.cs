@@ -8,10 +8,10 @@ using UnityEngine.UI;
 
 public class ButtonGroup : MonoBehaviour
 {
-    private List<Button> clickedButtons = new List<Button>(); // Å¬¸¯µÈ ¹öÆ°À» ´ãÀ» ¸®½ºÆ®
+    private List<Button> clickedButtons = new List<Button>(); // Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®
 
     public Button[] buttons;
-    private int clickedCount;// Å¬¸¯µÈ ¹öÆ°ÀÇ ¼ö
+    private int clickedCount;// Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½
     public int num;
     private List<int> loNum = new List<int>();
     public Button submit;
@@ -24,61 +24,61 @@ public class ButtonGroup : MonoBehaviour
     //public bool checkBool = false;
     // Start is called before the first frame update
 
-    private Button lastClickedButton; // ¸¶Áö¸·À¸·Î Å¬¸¯µÈ ¹öÆ°À» ÃßÀûÇÏ±â À§ÇÑ º¯¼ö
+    private Button lastClickedButton; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
     void Start()
     {
         
-        // ¸ðµç ¹öÆ°¿¡ ´ëÇØ Å¬¸¯ ÀÌº¥Æ®¸¦ Ãß°¡ÇÕ´Ï´Ù.
+        // ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ ï¿½Ìºï¿½Æ®ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Õ´Ï´ï¿½.
         for (int i = 0; i < buttons.Length; i++)
         {
-            // Å¬·ÎÀú º¯¼ö·Î ¹öÆ°À» ÀúÀåÇÕ´Ï´Ù.
+            // Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
             Button button = buttons[i];
             button.onClick.AddListener(() => Click(button));
         }
         //submit.onClick.AddListener(() => LottoSubmit());
     }
 
-    // ¹öÆ° Å¬¸¯ ½Ã È£ÃâµÇ´Â ÇÔ¼ö
+    // ï¿½ï¿½Æ° Å¬ï¿½ï¿½ ï¿½ï¿½ È£ï¿½ï¿½Ç´ï¿½ ï¿½Ô¼ï¿½
     public void  Click(Button clickedButton)
     {
         Text t = clickedButton.GetComponentInChildren<Text>();
         if (clickedButtons.Contains(clickedButton))
         {
-            // ÀÌ¹Ì Å¬¸¯µÈ ¹öÆ°ÀÎ °æ¿ì, Å¬¸¯ Ãë¼Ò Ã³¸®
-            clickedButton.image.color = Color.white;
+            // ï¿½Ì¹ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½, Å¬ï¿½ï¿½ ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½
+            clickedButton.image.color = new Color(255f, 255f, 255f, 0f);
             clickedButtons.Remove(clickedButton);
             loNum.Remove(int.Parse(t.text));
         }
         else
         {
-            // »õ·Î¿î ¹öÆ°À» Å¬¸¯ÇÑ °æ¿ì, Å¬¸¯ Ã³¸®
-            clickedButton.image.color = Color.black;
+            // ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½, Å¬ï¿½ï¿½ Ã³ï¿½ï¿½
+            clickedButton.image.color = new Color(0f, 0f, 0f, 1f);
             clickedButtons.Add(clickedButton);
             loNum.Add(int.Parse(t.text));
         }
 
-        // Å¬¸¯µÈ ¹öÆ°ÀÇ ¼ö°¡ ´Ù¼¸ °³ÀÏ ¶§ÀÇ µ¿ÀÛ
+        // Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         PerformActionForFiveClickedButtons();
-        lastClickedButton = clickedButton; // ¸¶Áö¸·À¸·Î Å¬¸¯µÈ ¹öÆ° ¾÷µ¥ÀÌÆ®
+        lastClickedButton = clickedButton; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
     }
     private void PerformActionForFiveClickedButtons()
     {
         if (clickedButtons.Count >= num)
         {
-            // Å¬¸¯µÈ ¹öÆ°ÀÌ 5°³ ÀÌ»óÀÌ¸é
+            // Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ 5ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½Ì¸ï¿½
             foreach (Button button in buttons)
             {
                 if (!clickedButtons.Contains(button))
                 {
-                    // Å¬¸¯µÈ ¹öÆ°ÀÌ ¾Æ´Ñ ¹öÆ°µéÀ» ºñÈ°¼ºÈ­
+                    // Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È°ï¿½ï¿½È­
                     button.interactable = false;
                 }
             }
         }
         else
         {
-            // Å¬¸¯µÈ ¹öÆ°ÀÌ 5°³ ¹Ì¸¸ÀÌ¸é ¸ðµç ¹öÆ°À» »óÈ£ ÀÛ¿ë °¡´ÉÇÏ°Ô ¼³Á¤
+            // Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ 5ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½È£ ï¿½Û¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½
             foreach (Button button in buttons)
             {
                 button.interactable = true;

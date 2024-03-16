@@ -388,7 +388,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxCount: 49
-  n: 3
   buttons:
   - {fileID: 1347589892}
   - {fileID: 88221824}
