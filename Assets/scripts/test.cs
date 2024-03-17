@@ -20,17 +20,13 @@ public class test : MonoBehaviour
     private void Start()
     {            
     }
-
-    //          ư             ȣ  Ǵ   Լ 
     //public void OnOtherButtonClicked()
     //{
     //    int[] numbers = randomnumber.RandomNumbers(maxCount, n);
 
-    //    //   ư  迭   ũ ⸸ŭ     ȸ ϸ                
     //    for (int i = 0; i < buttons.Length; i++)
     //    {
     //        Debug.Log($"{i + 1}  °      : {numbers[i]}");
-    //        //   ư  ؽ Ʈ                 
     //        buttons[i].GetComponentInChildren<Text>().text = numbers[i].ToString();
     //        SetButtonColor(buttons[i], numbers[i]);
     //    }
@@ -48,7 +44,7 @@ public class test : MonoBehaviour
         //Invoke("LoadLottoScene", n);
     }
     
-    // Button1, Button2, Button3, Button4, Button5                  ϴ   Լ 
+    // Button1, Button2, Button3, Button4, Button5
     private void SetRandomNumbersToButtons()
     {
         numbers = randomnumber.RandomNumbers(maxCount, buttons.Length);
@@ -84,9 +80,5 @@ public class test : MonoBehaviour
         {
             button.image.color = colors[4];
         }
-    }
-    private void LoadLottoScene()
-    {
-        //SceneManager.LoadScene("lotto");
     }
 }

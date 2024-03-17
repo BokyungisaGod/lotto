@@ -11,5 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/lotto.unity
     guid: b1f29f92db6f77a48b9186df86bf4b62
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 96c8f53a4dc208d48996b382d977f9de
+  - enabled: 1
+    path: Assets/Scenes/GameStart.unity
+    guid: 3ca74d00a89fb02419a4c1113773dc75
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
