@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 //using UnityEngine.UIElements;
 
@@ -18,8 +19,7 @@ public class ButtonGroup : MonoBehaviour
     public GameObject win;
     public GameObject lose;
     public GameObject img;
-
-
+    
     //public GameObject check;
     //public bool checkBool = false;
     // Start is called before the first frame update
@@ -103,5 +103,9 @@ public class ButtonGroup : MonoBehaviour
             img.SetActive(true);
             lose.SetActive(true);
         }
+    }
+    public void Retry()
+    {
+        SceneManager.LoadScene("SampleScene");
     }
 }

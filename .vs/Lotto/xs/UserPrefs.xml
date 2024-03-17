@@ -1,23 +1,25 @@
 ﻿<Properties StartupConfiguration="{A182F425-90AF-F829-D9D0-F03DC2B555FF}|">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="db7186b7-ebb2-487e-b05e-3bf3bcc5cd8b" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="58fcd38e-f228-4583-aa3e-8b03aba5886b" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/ButtonGroup.cs">
     <Files>
-      <File FileName="Assets/scripts/ButtonGroup.cs" Line="67" Column="27" />
-      <File FileName="Assets/scripts/test.cs" Line="37" Column="8" />
-      <File FileName="Assets/scripts/Count.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/ButtonGroup.cs" Line="108" Column="9" />
+      <File FileName="Assets/scripts/test.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Count.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Lotto" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="scripts" expanded="True" />
+              <Node name="scripts" expanded="True">
+                <Node name="ButtonGroup.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
