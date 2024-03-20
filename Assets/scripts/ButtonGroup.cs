@@ -106,6 +106,6 @@ public class ButtonGroup : MonoBehaviour
     }
     public void Retry()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Menu");
     }
 }

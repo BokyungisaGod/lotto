@@ -12,7 +12,7 @@ public class test : MonoBehaviour
     //private int n;
     public Button[] buttons;
     public Color[] colors;
-    private bool buttonClicked = false;
+    //private bool buttonClicked = false;
     public Button btn;
     public static int[] numbers;
     public Count countnumber;
