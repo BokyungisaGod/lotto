@@ -18,7 +18,8 @@ public class test : MonoBehaviour
     public Count countnumber;
 
     private void Start()
-    {            
+    {
+        Invoke("OnButtonClicked", 2f);
     }
     //public void OnOtherButtonClicked()
     //{
