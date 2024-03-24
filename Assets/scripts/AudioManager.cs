@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -15,7 +16,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip attack;
     public AudioClip boom;
     public AudioClip hide;
-
+    
 
     private void Start()
     {

@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameStart.unity
     guid: 3ca74d00a89fb02419a4c1113773dc75
+  - enabled: 1
+    path: Assets/Scenes/NextSampleScene.unity
+    guid: b7501a309899b4dd5850d2e70eaee2c9
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
