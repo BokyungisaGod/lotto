@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d63467d4534bf3d44bb4c21e99ab5787
+guid: 78e05f769d7797846a45bb3764fcec5b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5414849391045992365
-    second: "\uB9D0\uD48D\uC120_0"
+      213: 5974028447604128314
+    second: Fade Black_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uB9D0\uD48D\uC120_0"
+      name: Fade Black_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 23
-        width: 612
-        height: 419
+        x: 0
+        y: 0
+        width: 3
+        height: 3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 350a67efa279ad4b0800000000000000
-      internalID: -5414849391045992365
+      spriteID: a3ab589a83308e250800000000000000
+      internalID: 5974028447604128314
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      "\uB9D0\uD48D\uC120_0": -5414849391045992365
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
