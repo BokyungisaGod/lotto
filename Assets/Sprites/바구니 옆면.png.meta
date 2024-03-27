@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 78e05f769d7797846a45bb3764fcec5b
+guid: 2cdcd9627641b486d9105172e8560a16
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5974028447604128314
-    second: Fade Black_0
+      213: -6921648332868716567
+    second: "\u1107\u1161\u1100\u116E\u1102\u1175 \u110B\u1167\u11C1\u1106\u1167\u11AB_0"
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -94,29 +94,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fade Black_0
+      name: "\u1107\u1161\u1100\u116E\u1102\u1175 \u110B\u1167\u11C1\u1106\u1167\u11AB_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3
-        height: 3
+        x: 181
+        y: 187
+        width: 3430
+        height: 3405
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3ab589a83308e250800000000000000
-      internalID: 5974028447604128314
+      spriteID: 9e77f23838d51ff90800000000000000
+      internalID: -6921648332868716567
       vertices: []
       indices: 
       edges: []
@@ -140,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Fade Black_0: 5974028447604128314
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
